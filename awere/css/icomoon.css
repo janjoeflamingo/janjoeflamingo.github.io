@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?nzukrg');
+  src:  url('../fonts/icomoon.eot?nzukrg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?nzukrg') format('truetype'),
+    url('../fonts/icomoon.woff?nzukrg') format('woff'),
+    url('../fonts/icomoon.svg?nzukrg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close .path1:before {
+  content: "\e91a";
+}
+.icon-close .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+}
+.icon-caret:before {
+  content: "\e900";
+}
+.icon-arrow1:before {
+  content: "\e901";
+}
+.icon-bag:before {
+  content: "\e902";
+}
+.icon-basket:before {
+  content: "\e903";
+}
+.icon-dd-minus:before {
+  content: "\e904";
+}
+.icon-dd-plus:before {
+  content: "\e905";
+}
+.icon-double-arrow .path1:before {
+  content: "\e906";
+}
+.icon-double-arrow .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+}
+.icon-gear:before {
+  content: "\e908";
+}
+.icon-heart:before {
+  content: "\e909";
+}
+.icon-heart-plus:before {
+  content: "\e90a";
+}
+.icon-linespacing:before {
+  content: "\e90b";
+}
+.icon-List:before {
+  content: "\e90c";
+}
+.icon-List1:before {
+  content: "\e90d";
+}
+.icon-location:before {
+  content: "\e90e";
+}
+.icon-mail .path1:before {
+  content: "\e90f";
+}
+.icon-mail .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+}
+.icon-Menu:before {
+  content: "\e911";
+}
+.icon-Options:before {
+  content: "\e912";
+}
+.icon-power:before {
+  content: "\e913";
+}
+.icon-reload:before {
+  content: "\e914";
+}
+.icon-search:before {
+  content: "\e915";
+}
+.icon-sliders:before {
+  content: "\e916";
+}
+.icon-upload:before {
+  content: "\e917";
+}
+.icon-user:before {
+  content: "\e918";
+}
+.icon-zoom-in:before {
+  content: "\e919";
+}
