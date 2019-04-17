@@ -709,3 +709,72 @@ span
 		.icon
 			margin-right: 15px
 
+
+
+
+
+
+/* Media
+     ====================== */
+
+
++max-screen(1850px)
+	.product
+		width: 16.666%
+		&__card 
+			.btn
+				margin-left: 5px
+
++max-screen(1599px)
+	.product
+		width: 20%
+
++max-screen(1399px)
+	.product
+		width: 25%
+
++max-screen(1180px)
+	.product
+		width: 33.33%
+
++max-screen(960px)
+	.filter-sidebar
+		width: auto
+		border-right: none
+	.toggle-filter
+		height: 30px
+		display: flex
+		align-items: center
+		border: 2px solid #d5d5d5
+		width: 120px
+		padding: 0 20px
+		border-radius: 20px
+		font-family: $font-family
+		&:hover
+			color: #d5d5d5
+		&.active
+			color: #1f4ba5
+			border-color: #1f4ba5
+		.sr-only
+			display: inline-block
+			font-size: 12px
+			font-weight: 400
+			line-height: 12px
+			margin-left: 15px
+			padding-top: 1px
+	.product
+		width: 25%
+	.sidebar
+		margin-left: -240px
+		&.open
+			margin-left: 0
+	.box-product.full
+		.product
+			width: 33.33%
+
++max-screen(930px)
+	.product
+		width: 33.33%
+	.box-product.full
+		.product
+			width: 50%
