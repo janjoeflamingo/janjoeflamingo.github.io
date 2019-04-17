@@ -14,19 +14,19 @@ $(function(){
 		return false;
 	});
 
-	$('.styler').styler();
-	// $('.toggle-filter').click(function(){
-	// 	$(this).toggleClass('active');
-	// 	$('.sidebar').toggleClass('open');
-	// 	$('.box-product').toggleClass('full');
-	// })
+	
+	$('.toggle-filter').click(function(){
+		$(this).toggleClass('active');
+		$('.sidebar').toggleClass('open');
+		$('.box-product').toggleClass('full');
+	})
 
 	// $('.toggle-menu').click(function(){
 	// 	$(this).toggleClass('active');
 	// 	$('.dropdown-content--menu').toggleClass('open');
 	// })
 
-	// $('.styler').styler();
+	$('.styler').styler();
 
 	$( "#slider-range" ).slider({
 		range: true,

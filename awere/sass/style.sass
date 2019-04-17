@@ -86,7 +86,16 @@ span
 	font-size: 12px
 	font-weight: 400
 
-
+.favorite
+	color: #b8b8b8
+	font-family: "PT Serif", sans-serif
+	font-size: 12px
+	font-style: italic
+	line-height: 18px
+	.icon
+		font-size: 14px
+	&:hover
+		color: #fff
 
 /* Header
      ====================== */
@@ -359,8 +368,57 @@ span
 	font-style: italic
 	line-height: 18px
 
+
+
+
+
+.box-product
+	display: flex
+	flex-wrap: wrap
+	margin-right: -1px
+	.product__title
+		height: 30px
+		overflow: hidden
+
 .product
+	position: relative
+	border-right: 1px solid #ececec
+	border-bottom: 1px solid #ececec
+	width: 14.285%
+	padding: 26px 10px
+	text-align: center
+	&:hover
+		.product__title, .price
+			color: #fff
+		.product__footer
+			position: relative
+			z-index: 2
+		.product__card
+			z-index: 2
+			opacity: 1
+			visibility: visible
+		&:before
+			height: 100%
+			width: 100%
+			left: 0
+			top: 0
+			transition: all 0.4s
+	&:before
+		content: ''
+		display: block
+		z-index: 1
+		position: absolute
+		top: 50%
+		left: 50%
+		height: 0
+		width: 0
+		background: #222
+		opacity: 0.95
+		transition: all 0.4s
+
 	&__title
+		position: relative
+		z-index: 2
 		color: $color
 		font-size: 12px
 		font-weight: 400
@@ -369,12 +427,60 @@ span
 			color: inherit
 			&:hover
 				text-decoration: underline
+
+	&__img
+		position: relative
+		margin: 45px 0 60px 0
+		img
+			margin: 0 auto
+
+	&__card
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		left: -30px
+		right: -30px
+		padding: 0 10px
+		text-align: center
+		top: 50%
+		transform: translate(0, -50%)
+		transition: all 0.4s
+		.btn
+			margin-left: 10px
+		.favorite
+			display: inline-block
+			margin-top: 15px
+
 	&__details
 		color: #b8b8b8
 		font-family: $font-family3, sans-serif
 		font-size: 12px
 		font-style: italic
 
+	&__footer
+		display: flex
+		align-items: center
+		justify-content: center
+		.price, .discount, .pbadge
+			width: 33.33%
+		.discount
+			text-align: right
+		&.sale
+			.price
+				color: $color-red
+		&.hit, &.new
+			justify-content: flex-start
+
+	.price
+		transition: all 0.4s
+
+.discount
+	color: #a1a1a1
+	font-family: Oswald
+	font-size: 8px
+	font-weight: 700
+	text-decoration: line-through
+	letter-spacing: 0.8px
 
 
 
@@ -417,6 +523,9 @@ span
 		font-weight: 400
 		&:hover
 			color: $color
+
+.sidebar
+	transition: margin-left 0.4s
 
 .category
 	color: $color-blue
@@ -583,3 +692,20 @@ span
 			margin-right: -4px
 			width: 50%
 			padding-right: 10px
+
+.paginator
+	height: 60px
+	padding: 0 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__item
+		color: #979797
+		font-size: 12px
+		font-weight: 400
+		line-height: 18px
+	.load
+		color: $color
+		.icon
+			margin-right: 15px
+
