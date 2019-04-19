@@ -49,6 +49,9 @@ span
 .text-right
 	text-align: right !important
 
+.text-error
+	color: $color-red
+
 
 /* Icons
      ====================== */
@@ -85,6 +88,9 @@ span
 	font-family: $font-family, Arial, sans-serif
 	font-size: 12px
 	font-weight: 400
+
+.toggle-menu
+	display: none
 
 .favorite
 	color: #b8b8b8
@@ -500,6 +506,7 @@ span
 	align-items: center
 	justify-content: center
 	flex-direction: column
+	text-align: center
 	&__title
 		color: $color
 		font-size: 48px
@@ -709,3 +716,179 @@ span
 		.icon
 			margin-right: 15px
 
+
+
+
+
+
+
+
+
+/* Media
+     ====================== */
+
+
++max-screen(1850px)
+	.product
+		width: 16.666%
+		&__card 
+			.btn
+				margin-left: 5px
+
++max-screen(1599px)
+	.logo, .main-menu, .search, .location
+		margin-right: 20px
+	.product
+		width: 20%
+
++max-screen(1399px)
+	.toggle-menu
+		display: block
+		background-color: transparent
+		border: none
+		padding: 0
+		margin-right: 35px
+		font-size: 18px
+	.logo, .main-menu, .search, .location
+		margin-right: 40px
+	.product
+		width: 25%
+	.main-menu
+		display: none
+	.dropdown-menu + .dropdown-content-tablet__title
+		margin-top: 38px
+.label-tablet
+	display: block
+	cursor: pointer
+.dropdown-content-tablet
+	width: 100%
+	display: none
+	&__item
+		width: 25%
+		padding: 30px
+		&:not(:last-child)
+			border-right: 1px solid #353535
+	&__title
+		font-size: 14px
+		font-weight: 700
+		color: #fff
+		font-family: $font-family2
+		letter-spacing: 1.4px
+		text-transform: uppercase
+		margin-bottom: 18px
+		line-height: 30px
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		bottom: 100%
+		left: 32px
+		+arr(14, 7, $color, t)
+.hr
+	height: 1px
+	background-color: #353535
+	margin: 25px 0
+
+.input-tablet:checked + .dropdown-content-tablet
+	display: block
+	position: absolute
+	z-index: 3
+	top: 80px
+	left: 0px
+	background: #000
+	display: flex
+
+
++max-screen(1180px)
+	.product
+		width: 33.33%
+
++max-screen(960px)
+	.filter-sidebar
+		width: auto
+		border-right: none
+	.toggle-filter
+		height: 30px
+		display: flex
+		align-items: center
+		border: 2px solid #d5d5d5
+		width: 120px
+		padding: 0 20px
+		border-radius: 20px
+		font-family: $font-family
+		&:hover
+			color: #d5d5d5
+		&.active
+			color: #1f4ba5
+			border-color: #1f4ba5
+		.sr-only
+			display: inline-block
+			font-size: 12px
+			font-weight: 400
+			line-height: 12px
+			margin-left: 15px
+			padding-top: 1px
+	.product
+		width: 25%
+	.sidebar
+		margin-left: -240px
+		&.open
+			margin-left: 0
+	.box-product.full
+		.product
+			width: 33.33%
+
++max-screen(930px)
+	.product
+		width: 33.33%
+	.box-product.full
+		.product
+			width: 50%
+
++max-screen(767px)
+	.product
+		padding-left: 20px
+		padding-right: 20px
+		width: 100%
+		&__img
+			margin: 22px 35px
+	.box-product.full
+		.product
+			width: 100%
+	.box-product .product__title
+		line-height: auto
+	.filter
+		flex-direction: column
+		&-sidebar
+			padding-left: 20px
+			padding-right: 20px
+			border-bottom: 1px solid #ececec
+		&-content
+			padding-left: 20px
+			padding-right: 20px
+			.filter__title
+				display: none
+	.sort__item
+		margin-left: 0
+		margin-right: 10px
+	.paginator
+		padding: 0 20px
+		&__item
+			font-size: 10px
+			&.load .icon
+				margin-right: 5px
+
+	.header-inner
+		min-height: 150px
+		height: auto
+		padding-top: 40px
+		padding-bottom: 40px
+		.bread-crumbs
+			top: 25px
+			transform: none
+			color: #fff
+			&__link
+				color: #fff
+	.header-inner__title
+		font-size: 28px
+		line-height: 28px
